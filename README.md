@@ -12,7 +12,7 @@ Either use this repository as template or create a complete new repository follo
 4. (Optional) For [embedding a binder badge](#binder-badge) in the `README.md`, [linking a certain Jupyter Notebook](#direct-link-to-jupyter-notebook) or [using custom public data](#add-data-to-your-binder), see below.
 
 ## Binder Badge
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mle313/jupyterhub-binder-template/main?labpath=test.ipynb) (Binder badge for `test.ipnyb` Jupyter notebook)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SupraCoNeX/jupyterhub-binder-template/HEAD?labpath=test.ipynb) (Binder badge for `test.ipnyb` Jupyter notebook)
 
 ### How to add a binder badge to your README.md
 1. Type in the URL of your Git repository on the [Binder webpage](https://mybinder.org/).
@@ -35,7 +35,7 @@ In order to link a certain Jupyter Notebook adjust the above link to the followi
  
 `https://mybinder.org/v2/gh/<GIT USER>/<REPOSITORY>/HEAD?labpath=<JUPYTER NOTEBOOK NAME>`
  
-Example: [https://mybinder.org/v2/gh/mle313/jupyterhub-binder-template/HEAD?labpath=test.ipynb](https://mybinder.org/v2/gh/mle313/jupyterhub-binder-template/HEAD?labpath=test.ipynb)
+Example: [https://mybinder.org/v2/gh/SupraCoNeX/jupyterhub-binder-template/HEAD?labpath=test.ipynb](https://mybinder.org/v2/gh/SupraCoNeX/jupyterhub-binder-template/HEAD?labpath=test.ipynb)
 
 ## Add data to your Binder
 
@@ -47,7 +47,7 @@ Example: [https://mybinder.org/v2/gh/mle313/jupyterhub-binder-template/HEAD?labp
 - `postBuild` script can include middle size data into your image
 - See [Binder's `postBuild` example](https://mybinder.readthedocs.io/en/latest/using/config_files.html#postbuild-run-code-after-installing-the-environment) for more uses of the `postBuild` script.
 
-Example [`postBuild`](https://github.com/mle313/jupyterhub-binder-template/blob/main/postBuild) for downloading data from the internet and add them to your repo image created by Binder:
+Example [`postBuild`](https://github.com/SupraCoNeX/jupyterhub-binder-template/blob/main/postBuild) for downloading data from the internet and add them to your repo image created by Binder:
 ```bash
 wget -q -O gapminder.csv http://bit.ly/2uh4s3g
 ```
